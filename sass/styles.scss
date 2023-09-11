@@ -1,3 +1,4 @@
+//estilos generales
 *{
     padding: 0;
     margin: 0;
@@ -16,6 +17,7 @@ body{
     justify-content: center;
     flex-wrap: wrap;
 }
+//estilos para los botones
 .calculator{
     position: relative;
     height: auto;
@@ -56,6 +58,7 @@ body{
         height: 130px;   
         border-radius: 20px;
     }
+    //estilos para el tema oscuro
     &.dark{
         background-color: #18181d;
         #display{
@@ -81,6 +84,7 @@ body{
     }
     
 }
+//se dio forma y se ubico al boton
 .theme-toggler{
     position: absolute;
     top: 30px;
@@ -99,12 +103,14 @@ body{
     }
 
 }
+//estilos del boton activado y desactivado 
 .theme-toggler.active{
     color: #242425;
     &::before{
         background-color: #bdbdbe;
     }
 }
+//estilos generales de los botones
 button{
     height: 60px;
     width: 60px;
@@ -119,3 +125,4 @@ button{
     }
 
 }
+
