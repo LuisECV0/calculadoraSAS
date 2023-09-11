@@ -36,9 +36,9 @@ body {
   align-items: center;
   justify-content: flex-end;
   font-size: 50px;
-  border: 5px solid rgb(84, 82, 90);
   border-radius: 20px;
   padding: 10px 10px;
+  background-color: #597e80;
 }
 .calculator #clear {
   background-color: rgb(146, 190, 231);
@@ -53,10 +53,32 @@ body {
   color: azure;
 }
 .calculator .btn-equal {
-  background-color: antiquewhite;
-  color: #9a9bf7;
+  background-color: rgb(62, 184, 117);
+  color: #111111;
   height: 130px;
   border-radius: 20px;
+}
+.calculator.dark {
+  background-color: #18181d;
+}
+.calculator.dark #display {
+  color: #e0e0ec;
+  background-color: #748376;
+}
+.calculator.dark #clear {
+  background-color: #125e1c;
+  color: white;
+}
+.calculator.dark .btn-number {
+  background-color: rgb(151, 16, 16);
+  font-weight: 600;
+}
+.calculator.dark .btn-operator {
+  background-color: rgb(139, 118, 48);
+}
+.calculator.dark .btn-equal {
+  background-color: #43520e;
+  color: white;
 }
 
 .theme-toggler {
@@ -67,6 +89,7 @@ body {
   z-index: 1;
 }
 .theme-toggler::before {
+  position: absolute;
   content: "";
   height: 30px;
   width: 30px;
@@ -74,14 +97,13 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background-color: #333;
-  z-index: -1;
 }
 
-.theme-toggler .active {
-  color: #333;
+.theme-toggler.active {
+  color: #242425;
 }
-.theme-toggler .active::before {
-  background-color: #fff;
+.theme-toggler.active::before {
+  background-color: #bdbdbe;
 }
 
 button {
