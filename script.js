@@ -25,8 +25,6 @@ buttons.forEach((item)=>{
         }
 
 
-
-
     };
 });
 
@@ -40,3 +38,33 @@ themeToggleBtn.onclick=()=>{
     themeToggleBtn.classList.toggle("active");
     isDark = !isDark;
 }
+
+/*funciones JS:
+var respuesta = Math.pow(n2,n1);
+//para potencias, en este caso 4 elevando a 2
+console.log("mensaje");
+//para mostrar mensajes por consola
+alert("hola")
+//muestra alertas en la pantalla
+var i=0;
+while(i<10){
+    i++;
+    alert(i);
+}
+//bucle while
+for (var i=0 ; i<10 ; i++) {
+alert(i);
+}
+//bucle for
+//////////////////////////DOM////////////////////////////////////////////////
+document.getElementById("id");
+//para capturar el valor de un id
+parsefloat();
+//convierte a decimal 
+btncalcular.addEventListener("click",calcular);
+//añade eventos, en este caso al dar click al boton calcula el resultado
+display.innerText.toString()
+//para convertir una cadeta a texto
+
+
+ */
